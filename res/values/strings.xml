@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SmartManagerActivity!</string>
+    <string name="app_name">SmartManager</string>
+     <string name="button1">Start Manager</string>
+     <string name="button2">Stop Manager</string>
+
+</resources>
