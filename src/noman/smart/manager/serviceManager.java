@@ -34,6 +34,8 @@ public class serviceManager extends Service implements SensorEventListener {
 		   mySensorManager.registerListener(this,  myAccelerometer , SensorManager.SENSOR_DELAY_NORMAL);
 		   mySensorManager.registerListener(this, myProximity, SensorManager.SENSOR_DELAY_NORMAL);
 		   
+		   Toast.makeText(this, "Manager Started.Change phone's position to change ringtone", Toast.LENGTH_LONG).show();
+		   
 		   return START_STICKY;
 	   }
 
@@ -55,17 +57,6 @@ public class serviceManager extends Service implements SensorEventListener {
 		        
 		  if (mySensor.getType() == Sensor.TYPE_PROXIMITY) 
 		  {	
-		        /*if (sensorEvent.values[0] == 0) 
-		        {
-		        	AudioManager audioManager=(AudioManager)getSystemService(AUDIO_SERVICE);
-		        	audioManager.setRingerMode(audioManager.RINGER_MODE_SILENT);
-		        } 
-		        else 
-		        {
-		        	AudioManager audioManager=(AudioManager)getSystemService(AUDIO_SERVICE);
-		        	audioManager.setRingerMode(audioManager.RINGER_MODE_NORMAL);
-		        }*/
-			  
 			   proValue = sensorEvent.values[0];
 		  }
 		  
